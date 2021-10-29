@@ -1,4 +1,9 @@
 import React from 'react'
+import pop_one from '../../assets/img/gallery/popular_sub1.png'
+import pop_two from '../../assets/img/gallery/popular_sub2.png'
+import pop_three from '../../assets/img/gallery/popular_sub3.png'
+import pop_four from '../../assets/img/gallery/popular_sub3.png'
+
 
 export default function Books() {
     return (
@@ -43,7 +48,7 @@ export default function Books() {
                                             <div class="col-xl-4 col-lg-4 col-md-6">
                                                 <div class="single-course mb-70">
                                                     <div class="course-img">
-                                                        <img src="assets/img/gallery/popular_sub1.png" alt=""/>
+                                                        <img src={pop_one} alt=""/>
                                                     </div>
                                                     <div class="course-caption">
                                                         <div class="course-cap-top">
@@ -72,7 +77,7 @@ export default function Books() {
                                             <div class="col-xl-4 col-lg-4 col-md-6">
                                                 <div class="single-course mb-70">
                                                     <div class="course-img">
-                                                        <img src="assets/img/gallery/popular_sub2.png" alt=""/>
+                                                        <img src={pop_two} alt=""/>
                                                     </div>
                                                     <div class="course-caption">
                                                         <div class="course-cap-top">
@@ -101,7 +106,7 @@ export default function Books() {
                                             <div class="col-xl-4 col-lg-4 col-md-6">
                                                 <div class="single-course mb-70">
                                                     <div class="course-img">
-                                                        <img src="assets/img/gallery/popular_sub3.png" alt=""/>
+                                                        <img src={pop_three} alt=""/>
                                                     </div>
                                                     <div class="course-caption">
                                                         <div class="course-cap-top">
@@ -130,7 +135,7 @@ export default function Books() {
                                             <div class="col-xl-4 col-lg-4 col-md-6">
                                                 <div class="single-course mb-70">
                                                     <div class="course-img">
-                                                        <img src="assets/img/gallery/popular_sub2.png" alt=""/>
+                                                        <img src={pop_four} alt=""/>
                                                     </div>
                                                     <div class="course-caption">
                                                         <div class="course-cap-top">
@@ -159,7 +164,7 @@ export default function Books() {
                                             <div class="col-xl-4 col-lg-4 col-md-6">
                                                 <div class="single-course mb-70">
                                                     <div class="course-img">
-                                                        <img src="assets/img/gallery/popular_sub3.png" alt=""/>
+                                                        <img src={pop_two} alt=""/>
                                                     </div>
                                                     <div class="course-caption">
                                                         <div class="course-cap-top">
@@ -188,7 +193,7 @@ export default function Books() {
                                             <div class="col-xl-4 col-lg-4 col-md-6">
                                                 <div class="single-course mb-70">
                                                     <div class="course-img">
-                                                        <img src="assets/img/gallery/popular_sub1.png" alt=""/>
+                                                        <img src={pop_three} alt=""/>
                                                     </div>
                                                     <div class="course-caption">
                                                         <div class="course-cap-top">
@@ -221,7 +226,7 @@ export default function Books() {
                                             <div class="col-xl-4 col-lg-4 col-md-6">
                                                 <div class="single-course mb-70">
                                                     <div class="course-img">
-                                                        <img src="assets/img/gallery/popular_sub3.png" alt=""/>
+                                                        <img src={pop_two} alt=""/>
                                                     </div>
                                                     <div class="course-caption">
                                                         <div class="course-cap-top">
@@ -250,7 +255,7 @@ export default function Books() {
                                             <div class="col-xl-4 col-lg-4 col-md-6">
                                                 <div class="single-course mb-70">
                                                     <div class="course-img">
-                                                        <img src="assets/img/gallery/popular_sub2.png" alt=""/>
+                                                        <img src={pop_one}alt=""/>
                                                     </div>
                                                     <div class="course-caption">
                                                         <div class="course-cap-top">
