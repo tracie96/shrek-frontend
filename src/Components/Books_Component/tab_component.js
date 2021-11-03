@@ -28,7 +28,7 @@ export default function TabComponent({books}) {
         <section class="all-course section-padding30">
             <div class="container">
                 <div class="row">
-                    <div class="all-course-wrapper">
+                    <div class="all-course-wrapper" style={{width:"100%"}}>
                         <div class="row mb-15">
                             <div class="col-lg-12">
                                 <div class="properties__button mb-90">
