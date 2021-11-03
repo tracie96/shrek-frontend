@@ -24,7 +24,7 @@ export default function Content({books,loader}) {
                         <div className="row align-items-center">
                             <div className="col-xl-6 col-lg-7 col-md-8">
                                 <div className="hero__caption">
-                                    <h1 data-animation="fadeInLeft" data-delay=".4s">The New Way To Learn Properly in With Us!</h1>
+                                    <h1 data-animation="fadeInLeft" data-delay=".4s">The New Way To Learn Properly is With Us!</h1>
                                     <div className="hero__btn">
                                         <a href="industries.html" className="btn hero-btn"  data-animation="fadeInLeft" data-delay=".8s">Get Started</a>
                                     </div>
@@ -58,8 +58,8 @@ export default function Content({books,loader}) {
                                 <span className="flaticon-web-design"></span>
                             </div>
                             <div className="cat-cap">
-                                <h5><a  href="#">Web Design</a></h5>
-                                <p>Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.</p>
+                                <h5><a  href="#">Programming</a></h5>
+                                <p> Programming books are great resources to have on hand as you learn to code. Here are 54 of the best coding books, arranged by programming ...</p>
                                 <a href="#" className="read-more1">Read More </a>
                             </div>
                         </div>
@@ -70,8 +70,8 @@ export default function Content({books,loader}) {
                                 <span className="flaticon-education"></span>
                             </div>
                             <div className="cat-cap">
-                                <h5><a  href="#">App Development</a></h5>
-                                <p>Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.</p>
+                                <h5><a  href="#">History</a></h5>
+                                <p> History books are great resources to have on hand as you learn to code. Here are 54 of the best coding books, arranged by programming ...</p>
                                 <a  href="#" className="read-more1">Read More</a>
                             </div>
                         </div>
@@ -83,8 +83,8 @@ export default function Content({books,loader}) {
                                 <span className="flaticon-communications"></span>
                             </div>
                             <div className="cat-cap">
-                                <h5><a  href="#">Video Editing</a></h5>
-                                <p>Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.</p>
+                                <h5><a  href="#">Graphics</a></h5>
+                                <p>This book provides a practical introduction to fluid simulation for graphics. The focus is on animating fully three-dimensional incompressible flow, from ...</p>
                                 <a  href="#" className="read-more1">Read More </a>
                             </div>
                         </div>
@@ -96,8 +96,8 @@ export default function Content({books,loader}) {
                                 <span className="flaticon-computing"></span>
                             </div>
                             <div className="cat-cap">
-                                <h5><a  href="#">Digital Marketing</a></h5>
-                                <p>Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.</p>
+                                <h5><a  href="#">Horror</a></h5>
+                                <p>Horror novels don't always get the respect they deserve; just because something is scary doesn't mean it's not “literary” or well-crafted art, ...</p>
                                 <a  href="#" className="read-more1">Read More</a>
                             </div>
                         </div>
@@ -109,8 +109,9 @@ export default function Content({books,loader}) {
                                 <span className="flaticon-tools-and-utensils"></span>
                             </div>
                             <div className="cat-cap">
-                                <h5><a  href="#">Seo Marketing</a></h5>
-                                <p>Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.</p>
+                                <h5><a  href="#">SciFI</a></h5>
+                                <p>We asked, you answered: Your 50 favorite sci-fi and fantasy books of the past decade · The Imperial Radch Trilogy. Ancillary Justice, by Ann ...
+</p>
                                 <a  href="#" className="read-more1">Read More</a>
                             </div>
                         </div>
@@ -122,8 +123,9 @@ export default function Content({books,loader}) {
                                 <span className="flaticon-business"></span>
                             </div>
                             <div className="cat-cap">
-                                <h5><a  href="#">Content Writing</a></h5>
-                                <p>Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.</p>
+                                <h5><a  href="#">Academia</a></h5>
+                                <p>Academia genre: new releases and popular books, including The Grimrose Girls by Laura Pohl,Friends Like These by Kim...
+</p>
                                 <a  href="#" className="read-more1">Read More </a>
                             </div>
                         </div>
@@ -136,7 +138,7 @@ export default function Content({books,loader}) {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="browse-btn2 text-center mt-50">
-                            <a href="courses.html" className="btn">Find More Courses</a>
+                            <a href="/books" className="btn">Find More Courses</a>
                         </div>
                     </div>
                 </div>

@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 import Book from '../Home_Component/single_book_component'
 import Books from './books_component'
 
-export default function Horror({books}) {
+export default function allBooks({books}) {
     const [category, setCategory]= useState('')
-    console.log(books)
-    const largeGroup = books.filter(activity => (activity.category == 'Horror'));
       return (
           <div class="row">
-          { largeGroup.map((book) => (
+          { books.map((book) => (
                        <div class="col-xl-4 col-lg-4 col-md-6">
                        <div class="single-course mb-70">
                            <div class="course-img">

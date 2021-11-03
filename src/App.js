@@ -31,7 +31,7 @@ function App() {
     getAllBooks();
   }, [])
 
-  const popular_books= books.slice(0,6)
+  const popular_books= books.slice(24,30)
 console.log("arr",popular_books)
   return (
     <div className="App">

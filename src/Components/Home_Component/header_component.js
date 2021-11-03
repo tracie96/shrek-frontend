@@ -14,17 +14,17 @@ export default function Header() {
   </button>
 
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav mr-auto">
-      <li>
+    <ul className="navbar-nav mr-auto" style={{width:"50%"}}>
+      <li style={{paddingLeft:"2%"}}> 
       <Link to="/" className="nav-link nav-item active">Home</Link>
       </li>
-      <li>
+      <li style={{paddingLeft:"2%"}}>
       <Link to="/about" className="nav-link nav-item active">About Us</Link>
       </li> 
-      <li>
+      <li style={{paddingLeft:"2%"}}>
       <Link to="/books" className="nav-link nav-item active">Book</Link>
       </li> 
-      <li>
+      <li style={{paddingLeft:"2%"}}>
       <Link to="/authors" className="nav-link nav-item active">Authors</Link>
       </li> 
     </ul>

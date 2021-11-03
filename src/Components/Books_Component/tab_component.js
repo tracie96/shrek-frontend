@@ -7,9 +7,9 @@ import SciFI from "./scifi_component"
 import ProgBooks from "./programming_component"
 import History from "./history_component"
 import Graphics from './graphics_component'
+import Books from "../Home_Component/single_book_component";
 export default function TabComponent({books}) {
     const [key, setKey] = useState("home");
-    console.log(books)
     return (
         <main>
         <div class="slider-area ">
@@ -39,7 +39,10 @@ export default function TabComponent({books}) {
                                             activeKey={key}
                                             onSelect={(k) => setKey(k)}
                                             >
-                                            <Tab eventKey="home" title="Home">
+                                            <Tab eventKey="home" title="All">
+                                                <Books books={books} loader={false}/>
+                                            </Tab>
+                                            <Tab eventKey="horror" title="Horror">
                                                 <Horror books={books} />
                                             </Tab>
                                             <Tab eventKey="profile" title="Sci-fi">
