@@ -3,15 +3,18 @@ import banner from "../../assets/img/hero/heroman.png";
 import popular_one from "../../assets/img/gallery/popular_sub1.png";
 import popular_two from "../../assets/img/gallery/popular_sub2.png";
 import popular_three from "../../assets/img/gallery/popular_sub3.png";
-import databg from '../../assets/img/gallery/section_bg02.png'
-import team_one from "../../assets/img/gallery/team1.png"
+import databg from '../../assets/img/gallery/section_bg02.png';
+import team_one from "../../assets/img/gallery/team1.png";
 import team_two from "../../assets/img/gallery/team2.png"
 import team_three from "../../assets/img/gallery/team3.png"
 import team_four from "../../assets/img/gallery/team4.png"
 import about_one from "../../assets/img/gallery/about1.png"
 import about_two from "../../assets/img/gallery/about2.png"
+import Book from "./single_book_component"
 
-export default function Content() {
+export default function Content({books,loader}) {
+    console.log("log",books)
+
     return (
     <main>
         <div className="slider-area ">
@@ -73,6 +76,7 @@ export default function Content() {
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-cat mb-50">
                             <div className="cat-icon">
@@ -85,6 +89,7 @@ export default function Content() {
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-cat mb-50">
                             <div className="cat-icon">
@@ -97,6 +102,7 @@ export default function Content() {
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-cat mb-50">
                             <div className="cat-icon">
@@ -109,6 +115,7 @@ export default function Content() {
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-cat mb-50">
                             <div className="cat-icon">
@@ -121,7 +128,11 @@ export default function Content() {
                             </div>
                         </div>
                     </div>
+
+
+
                 </div>
+
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="browse-btn2 text-center mt-50">
@@ -144,93 +155,11 @@ export default function Content() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-xl-4 col-lg-4 col-md-6">
-                        <div className="single-course mb-40">
-                            <div className="course-img">
-                                <img src={popular_one} alt=""/>
-                            </div>
-                            <div className="course-caption">
-                                <div className="course-cap-top">
-                                    <h4><a href="#">Graphic Design</a></h4>
-                                </div>
-                                <div className="course-cap-mid d-flex justify-content-between">
-                                    <div className="course-ratting">
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                    <ul><li>52 Review</li></ul>
-                                </div>
-                                <div className="course-cap-bottom d-flex justify-content-between">
-                                    <ul>
-                                        <li><i className="ti-user"></i> 562</li>
-                                        <li><i className="ti-heart"></i> 562</li>
-                                    </ul>
-                                    <span>Free</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-lg-4 col-md-6">
-                        <div className="single-course mb-40">
-                            <div className="course-img">
-                                <img src={popular_two} alt=""/>
-                            </div>
-                            <div className="course-caption">
-                                <div className="course-cap-top">
-                                    <h4><a href="#">Web Development</a></h4>
-                                </div>
-                                <div className="course-cap-mid d-flex justify-content-between">
-                                    <div className="course-ratting">
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                    <ul><li>52 Review</li></ul>
-                                </div>
-                                <div className="course-cap-bottom d-flex justify-content-between">
-                                    <ul>
-                                        <li><i className="ti-user"></i> 562</li>
-                                        <li><i className="ti-heart"></i> 562</li>
-                                    </ul>
-                                    <span>Free</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-lg-4 col-md-6">
-                        <div className="single-course mb-40">
-                            <div className="course-img">
-                                <img src={popular_three} alt=""/>
-                            </div>
-                            <div className="course-caption">
-                                <div className="course-cap-top">
-                                    <h4><a href="#">Digital Marketing</a></h4>
-                                </div>
-                                <div className="course-cap-mid d-flex justify-content-between">
-                                    <div className="course-ratting">
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                    <ul><li>52 Review</li></ul>
-                                </div>
-                                <div className="course-cap-bottom d-flex justify-content-between">
-                                    <ul>
-                                        <li><i className="ti-user"></i> 562</li>
-                                        <li><i className="ti-heart"></i> 562</li>
-                                    </ul>
-                                    <span>Free</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                
+                  <Book books={books} loader={loader}></Book>
+
+
                 </div>
                 <div className="row">
                     <div className="col-lg-12">
@@ -242,6 +171,13 @@ export default function Content() {
             </div>
         </div>
     
+
+
+
+
+
+
+
         <div className="team-area pt-160 pb-160 section-bg" data-background={databg}>
             <div className="container">
                 <div className="row justify-content-center">
