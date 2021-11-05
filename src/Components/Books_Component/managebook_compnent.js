@@ -13,7 +13,9 @@ export default function ManageBook({books}) {
         setShow(true);
         setId(e)
     }
-    
+    var valrow=[]
+    for(var i = 0;i<books.length;i++ ){
+    }
     const handleDelete= async(e) => {
         try {
             const response = await axios({
@@ -55,7 +57,7 @@ export default function ManageBook({books}) {
         <div class="progress-table-wrap">
             <div class="progress-table">
                 <div class="table-head">
-                    <div class="serial">#</div>
+                    <div class="serial"></div>
                     <div class="country">Name</div>
                     <div class="visit">Author</div>
                     <div class="percentage">Category</div>
@@ -67,7 +69,7 @@ export default function ManageBook({books}) {
                 { books.map((book) => (
 
                 <div class="table-row">
-                    <div class="serial">{book.id}</div>
+                    <div class="serial">{}</div>
                     <div class="country"> <img src={book.imageLink} alt="flag" style={{width:"80%"}}/></div>
                     <div class="visit">{book.author}</div>
                     <div class="percentage">{book.category}</div>
