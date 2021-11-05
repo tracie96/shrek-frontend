@@ -25,9 +25,7 @@ export default function CreateBook() {
           loginFormData.append("year", formValue.year)
           loginFormData.append("file", formValue.file)
 
-          for (var [key, value] of loginFormData.entries()) { 
-            console.log(key, value);  
-          }    
+   
         try {
             const response = axios({
               method: "post",

@@ -2,15 +2,20 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
-
+import Prelader from "../Home_Component/preloader_component"
 export default function Preview() {
   const location = useLocation();
   const { id } = location.state;
+  console.log(id)
   const url = `https://shrek-ruby-on-rails-api.herokuapp.com/api/v1/books/${id}`;
   const [loader, setLoader] = useState(false);
   const [books, getBooks] = useState([]);
   const [reviews, getReviews] = useState([]);
-
+  const [formValue, setformValue] = React.useState({
+    name: '',
+    comment: '',
+ 
+  });
 
   const getAllBooks = async () => {
     setLoader(true);
@@ -30,10 +35,50 @@ export default function Preview() {
   useEffect(() => {
     getAllBooks();
   }, []);
-console.log(reviews)
   if (loader) {
-    return(<p>Loading</p>)
+    return(<Prelader></Prelader>)
 }
+
+
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const loginFormData = new FormData();
+    loginFormData.append("book_id", id)
+    loginFormData.append("name", formValue.name)
+    loginFormData.append("comment", formValue.comment)
+
+  try {
+      const response =
+        axios({
+        method: "post",
+        url: `https://shrek-ruby-on-rails-api.herokuapp.com/api/v1/review/reviews`,
+        data: 
+        {
+        comment: formValue.comment,
+        book_id: id,
+        name:formValue.name
+        },
+
+      });
+      if(response){
+          
+        getAllBooks();
+
+    }
+    } catch(error) {
+      console.log(error)
+    }
+
+    
+}
+const handleChange = (event) => {
+    setformValue({
+      ...formValue,
+      [event.target.name]: event.target.value
+    });
+  }
+
   return (
     <main>
       <div class="slider-area ">
@@ -157,7 +202,7 @@ console.log(reviews)
                 <form
                   class="form-contact comment_form"
                   action="#"
-                  id="commentForm"
+                  id="commentForm" onSubmit={handleSubmit}
                 >
                   <div class="row">
                     <div class="col-12">
@@ -165,9 +210,10 @@ console.log(reviews)
                         <textarea
                           class="form-control w-100"
                           name="comment"
-                          id="comment"
                           cols="30"
                           rows="9"
+                          value={formValue.comment} 
+                          onChange={handleChange}
                           placeholder="Write Comment"
                         ></textarea>
                       </div>
@@ -179,32 +225,14 @@ console.log(reviews)
                           name="name"
                           id="name"
                           type="text"
+                          value={formValue.name} 
+                          onChange={handleChange}
                           placeholder="Name"
                         />
                       </div>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <input
-                          class="form-control"
-                          name="email"
-                          id="email"
-                          type="email"
-                          placeholder="Email"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <input
-                          class="form-control"
-                          name="website"
-                          id="website"
-                          type="text"
-                          placeholder="Website"
-                        />
-                      </div>
-                    </div>
+           
+                   
                   </div>
                   <div class="form-group">
                     <button
