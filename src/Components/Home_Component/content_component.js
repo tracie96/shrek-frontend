@@ -46,7 +46,7 @@ export default function Content({books,loader}) {
                 <div className="row justify-content-sm-center">
                     <div className="cl-xl-7 col-lg-8 col-md-10">
                         <div className="section-tittle text-center mb-70">
-                            <span>Popular Online Courses</span>
+                            <span>Popular Online Books</span>
                             <h2>Lets Browse All Catagories</h2>
                         </div> 
                     </div>
@@ -138,7 +138,7 @@ export default function Content({books,loader}) {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="browse-btn2 text-center mt-50">
-                            <a href="/books" className="btn">Find More Courses</a>
+                            <a href="/books" className="btn">Find More Books to Read</a>
                         </div>
                     </div>
                 </div>
@@ -151,8 +151,8 @@ export default function Content({books,loader}) {
                 <div className="row justify-content-sm-center">
                     <div className="cl-xl-7 col-lg-8 col-md-10">
                         <div className="section-tittle text-center mb-70">
-                            <span>Most Popular Course Of This Week</span>
-                            <h2>Our Popular Course</h2>
+                            <span>Most Popular Reads Of This Week</span>
+                            <h2>Our Popular Reads</h2>
                         </div> 
                     </div>
                 </div>
@@ -166,7 +166,7 @@ export default function Content({books,loader}) {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="browse-btn2 text-center mt-50">
-                            <a href="courses.html" className="btn">Find More Courses</a>
+                            <a href="courses.html" className="btn">Find More Reads</a>
                         </div>
                     </div>
                 </div>
