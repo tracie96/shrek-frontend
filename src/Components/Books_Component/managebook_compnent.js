@@ -8,21 +8,25 @@ export default function ManageBook({books}) {
     const [show, setShow] = useState(false);
     const [id, setId] = useState('')
     const handleClose = () => setShow(false);
-  
+    // const [newbooks,setBook]=useState(books)
     const handleShow= (e) => {
         setShow(true);
         setId(e)
     }
     
-    const handleDelete= (e) => {
+    const handleDelete= async(e) => {
         try {
-            const response = axios({
+            const response = await axios({
               method: "delete",
               url: `https://shrek-ruby-on-rails-api.herokuapp.com/api/v1/books/${id}`,
-            //   headers: { "Content-Type": "multipart/form-data" },
-            });
-            if(response){
+            }); 
+            console.log("response",response)
+
+            if(response.data.status === 'Success'){
                 setShow(false)
+                window.location.reload();
+                
+
             }
           } catch(error) {
             console.log(error)

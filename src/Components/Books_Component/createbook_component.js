@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import axios from 'axios';
+import {useEffect, useState} from 'react';
 
 export default function CreateBook() {
     const [formValue, setformValue] = React.useState({
@@ -13,6 +14,7 @@ export default function CreateBook() {
         file:''
 
       });
+      const [successmessage, setSuccess]=useState('')
 
       const handleSubmit = (event) => {
           event.preventDefault()
@@ -35,6 +37,9 @@ export default function CreateBook() {
             });
             if(response){
                 console.log("yes")
+                const successmsg ="Book Created Successfully"
+                setSuccess(successmsg)
+                        
             }
           } catch(error) {
             console.log(error)
@@ -75,8 +80,8 @@ export default function CreateBook() {
                     </div>
                     <div class="col-lg-12">
                         <form class="form-contact contact_form" onSubmit={handleSubmit} novalidate="novalidate">
+                        {successmessage?<div class='alert alert-success alert-dismissible fade ' role='alert' dismissa>{successmessage}</div>:null}
                             <div class="row">
-                              
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <input class="form-control valid" name="title" value={formValue.title} onChange={handleChange} type="text" onfocus="this.placeholder = ''" placeholder="Enter your title"/>
@@ -110,7 +115,7 @@ export default function CreateBook() {
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="file" value={formValue.name} onChange={handleChange} type="file" onfocus="this.placeholder = ''" placeholder="Upload Pdf"/>
+                                        <input class="form-control valid" name="file" value={formValue.name} onChange={handleChange} type="text" onfocus="this.placeholder = ''" placeholder="Upload Pdf"/>
                                     </div>
                                 </div>
                             </div>

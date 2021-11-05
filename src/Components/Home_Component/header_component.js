@@ -24,9 +24,9 @@ export default function Header() {
       <li style={{paddingLeft:"2%"}}>
       <Link to="/books" className="nav-link nav-item active">Book</Link>
       </li> 
-      <li style={{paddingLeft:"2%"}}>
+      {/* <li style={{paddingLeft:"2%"}}>
       <Link to="/authors" className="nav-link nav-item active">Authors</Link>
-      </li> 
+      </li>  */}
       <li style={{paddingLeft:"2%"}}>
       <Link to="/createbooks" className="nav-link nav-item active">Create Book</Link>
       </li> 
