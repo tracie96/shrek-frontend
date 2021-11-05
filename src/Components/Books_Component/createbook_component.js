@@ -8,10 +8,10 @@ export default function CreateBook() {
         title: '',
         category: '',
         author:'',
-        imglink:'',
+        imageLink:'',
         pages:'',
         year:'',
-        file:''
+        link:''
 
       });
       const [successmessage, setSuccess]=useState('')
@@ -22,10 +22,10 @@ export default function CreateBook() {
           loginFormData.append("title", formValue.title)
           loginFormData.append("category", formValue.category)
           loginFormData.append("author", formValue.author)
-          loginFormData.append("imglink", formValue.imglink)
+          loginFormData.append("imageLink", formValue.imageLink)
           loginFormData.append("pages", formValue.pages)
           loginFormData.append("year", formValue.year)
-          loginFormData.append("file", formValue.file)
+          loginFormData.append("link", formValue.link)
 
    
         try {
@@ -100,7 +100,7 @@ export default function CreateBook() {
                           
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="imglink" value={formValue.imglink} onChange={handleChange} type="text" onfocus="this.placeholder = ''"  placeholder="Enter your ImageLink"/>
+                                        <input class="form-control valid" name="imageLink" value={formValue.imageLink} onChange={handleChange} type="text" onfocus="this.placeholder = ''"  placeholder="Enter your ImageLink"/>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
@@ -115,7 +115,7 @@ export default function CreateBook() {
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="file" value={formValue.name} onChange={handleChange} type="text" onfocus="this.placeholder = ''" placeholder="Upload Pdf"/>
+                                        <input class="form-control valid" name="link" value={formValue.link} onChange={handleChange} type="text" onfocus="this.placeholder = ''" placeholder="Upload Pdf"/>
                                     </div>
                                 </div>
                             </div>
