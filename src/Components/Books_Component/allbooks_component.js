@@ -36,6 +36,11 @@ export default function allBooks({books}) {
                                    </ul>
                                    <span>Free</span>
                                </div>
+                              <Link
+                                to='/previewbook'
+                                state={{ id: book.id }} className="nav-link nav-item active" style={{margin:"0px"}}
+                                >Preview
+                                </Link>
                            </div>
                        </div>
                    </div>

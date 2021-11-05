@@ -14,9 +14,9 @@ import Book from "./single_book_component"
 
 export default function Content({books,loader}) {
     console.log("log",books)
-
     return (
     <main>
+
         <div className="slider-area ">
             <div className="slider-active">
                 <div className="single-slider slider-height align-items-center">

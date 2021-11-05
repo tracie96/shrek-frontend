@@ -8,7 +8,9 @@ import About from './Components/About_Component/about_us_compnent'
 import Books from './Components/Books_Component/books_component'
 import Author from './Components/Author_Component/author_component'
 import NotFound from './Components/NotFound/404'
-
+import CreateBook from './Components/Books_Component/createbook_component'
+import ManageBook from './Components/Books_Component/managebook_compnent'
+import Preview from './Components/Books_Component/preview_components'
 function App() {
 
   const url ="https://shrek-ruby-on-rails-api.herokuapp.com/api/v1/books";
@@ -50,7 +52,15 @@ console.log("arr",popular_books)
         <Route exact path='/authors'>
           <Author books={books}></Author>
         </Route>
-
+        <Route exact path='/createbooks'>
+          <CreateBook books={books}></CreateBook>
+        </Route>
+        <Route exact path='/managebooks'>
+          <ManageBook books={books}></ManageBook>
+        </Route>
+        <Route exact path='/previewbook'>
+          <Preview books={books}></Preview>
+        </Route>
         <Route path="*"><NotFound></NotFound></Route>
         </Switch>
 

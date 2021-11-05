@@ -1,11 +1,9 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import pop_one from '../../assets/img/gallery/popular_sub1.png'
-
+import { Link } from 'react-router-dom';
+import Preloader from './preloader_component'
 export default function Book({ books, loader }) {
   if (loader) {
-      return(<p>Loading</p>)
+      return(<Preloader></Preloader>)
   }
     return (
         <div class="row">
@@ -39,6 +37,14 @@ export default function Book({ books, loader }) {
                                   <p>Year :{book.year}</p>
                                   <span>Free</span>
                               </div>
+                              <li>
+                              <Link
+                                    to={{
+                                        pathname: "/previewbook",
+                                        state: { id: book.id }
+                                    }} className="nav-link nav-item active" style={{margin:"0px"}}
+                                    >Preview</Link>
+                                </li>
                           </div>
                       </div>
                   </div>
